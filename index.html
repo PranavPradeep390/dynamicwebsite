@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shopping Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        
+        <nav class="navbar">
+            <a href="" class="active">Home</a>
+            <a href="#allproducts">Products</a>
+            <a href="#aboutus">About</a>
+            <a href="">Featured</a>
+            <a href="">Contact</a>
+        </nav>
+
+    <a class="logo" href="">JEWEL</a>
+
+    </div>
+    <div class="parallax-container">
+        <div class="parallax-background"></div>
+        <div class="content">
+            <h1>Best Jewellery
+                Collection</h1>
+            <p>The allure of gold, and the desire to own it, dates back as far as the history of mankind itself. The place of gold has been extraordinary in every society</p>
+            <a href="" class="btn">Shop Now</a>
+        </div>
+    </div>
+
+
+<h1 class="text-center mt-3">LATEST PRODUCTS</h1>
+
+<div id="allproducts">
+    <div class="product" id="product1">
+        <img class="pics" src="./p1.png" alt="Product 1" >
+        <p>Necklace - $15</p>
+        <button onclick="addToCart('Necklace', 15)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product2">
+        <img  class="pics" src="./p2.png" alt="Product 2" >
+        <p>Gold Chain - $25</p>
+        <button onclick="addToCart('Gold Chain', 25)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product3">
+        <img  class="pics" src="./p3.png" alt="Product 3" >
+        <p>Pearl Chain - $35</p>
+        <button onclick="addToCart('Pearl Chain', 35)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product4">
+        <img  class="pics" src="./p4.png" alt="Product 4" >
+        <p>Stone Ring - $20</p>
+        <button onclick="addToCart('Stone Ring', 20)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product5">
+        <img  class="pics" src="./p5.png" alt="Product 5" >
+        <p>Diamond Ring - $30</p>
+        <button onclick="addToCart('Diamond Ring', 30)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product6">
+        <img  class="pics" src="./p6.png" alt="Product 6" >
+        <p>Stone Earing- $20</p>
+        <button onclick="addToCart('Stone Earing', 20)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product7">
+        <img  class="pics" src="./p7.png" alt="Product 7" >
+        <p>Gold Earing - $20</p>
+        <button onclick="addToCart('Gold Earing', 20)">Add to Cart</button>
+    </div>
+    
+    <div class="product" id="product8">
+        <img  class="pics" src="./p8.png" alt="Product 8" >
+        <p>Stone Neckpiece - $40</p>
+        <button onclick="addToCart('Stone Neckpiece', 40)">Add to Cart</button>
+    </div>
+</div>
+<div id="buttondiv"><button  id="vap">View All Products</button></div>
+
+<div class="cart">
+    <h2 class="text-center  mt-1">Your Carts</h2>
+    <div id="cart-items"><h5 class="text-center" >Empty Cart</h5></div>
+<div id="centered">
+        <p class="fs-4">Total Purchase Cost: $<span id="totalCost">0</span></p>
+     
+        <button class="bttn" onclick="clearCart()">Clear Cart</button>
+</div>
+<div id="buttondiv"><button class="mt-2"  id="vap">Buy Now</button></div>
+</div>
+<div id="aboutus">
+    <div id="aboutpic">
+        <div id="blackbox"></div>
+        <img src="./about-img.jpg" alt="" srcset="">
+    </div>
+    <div id="aboutwords">
+        <h1>ABOUT US</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos nesciunt alias ipsa magnam quas aliquam, id architecto suscipit neque cumque? Tenetur repudiandae, deleniti minus assumenda fugiat corrupti non fugit.</p>
+    </div>
+</div>
+<div id="offitems"> 
+    <div id="off1"><h1 class="innerwords">
+        <b>Upto 15% Off</b></h1></div>
+    <div id="off2"><h1 class="innerwords">
+        <b>Upto 15% Off</b></h1></div>
+    <div id="off3"><h1 class="innerwords">
+        <b>Upto 15% Off</b></h1></div>
+</div>
+<div class="footer">
+    <h2>Jewel Ornaments</h2>
+    <div class="row">
+        <div class="col">
+            <a href="#">Contact us</a>
+            <a href="#">About us</a>
+
+        </div>
+        <div class="col">
+            <a href="#">Help Center </a>
+            <a href="#">Order Now</a>
+
+        </div>
+        <div class="col">
+            <a href="#">Terms of Use</a>
+            
+
+        </div>
+        <div class="col">
+            <a href="#">Privacy</a>
+            
+        </div>
+    </div>
+
+
+<select id="search_bar">
+    <option value="">English</option>
+    <option value="">हिंदी</option>
+</select>
+
+</div>
+
+<script>
+    
+    let cart = [];
+
+    function addToCart(productName, price) {
+        const item = { name: productName, price: price };
+        cart.push(item);
+        updateCart();
+    }
+
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCart();
+    }
+
+    function updateCart() {
+        const cartItemsElement = document.getElementById('cart-items');
+        const totalCostElement = document.getElementById('totalCost');
+
+        cartItemsElement.innerHTML = '';
+        let totalCost = 0;
+
+        cart.forEach((item, index) => {
+            const cartItemElement = document.createElement('div');
+            cartItemElement.classList.add('cart-item');
+
+            cartItemElement.innerHTML = `
+                <p id="itemnames">${item.name} - $${item.price}</p>
+                <button class="bttn" onclick="removeFromCart(${index})">Remove From Cart</button>
+            `;
+
+            cartItemsElement.appendChild(cartItemElement);
+            totalCost += item.price;
+        });
+
+        totalCostElement.textContent = totalCost;
+    }
+
+    function clearCart() {
+        cart = [];
+        updateCart();
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+    var parallaxBackground = document.querySelector('.parallax-background');
+  
+    document.addEventListener('scroll', function () {
+      var scrolled = window.scrollY;
+      parallaxBackground.style.transform = 'translate3d(0, ' + scrolled * 0.5 + 'px, 0)';
+    });
+  });
+</script>
+
+</body>
+</html>
